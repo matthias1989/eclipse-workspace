@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans" 
+		xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">		
+
+	
+	<bean id = "javaCollection" class="com.tutorialspoint.JavaCollection">
+
+		<property name="addressList">
+			<list>
+				<value>Belgium</value>
+				<value>Russia</value>
+				<value>Netherlands</value>
+				<value>France</value>
+			</list>
+		</property>
+		
+		<property name="addressSet">
+			<set>
+				<value>Belgium</value>
+				<value>Russia</value>
+				<value>Netherlands</value>
+				<value>France</value>
+			</set>
+		</property>
+		
+		<property name="addressMap">
+			<map>
+				<entry key = "1" value = "Belgium" />
+				<entry key = "2" value = "Russia" />
+				<entry key = "3" value = "Netherlands" />
+				<entry key = "4" value = "France" />
+			</map>
+		</property>
+		
+		<property name="addressProp">
+			<props>
+				<prop key = "one"> Belgium </prop>
+				<prop key = "two">Russia</prop>
+				<prop key = "three">Netherlands</prop>
+				<prop key = "four">France</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
